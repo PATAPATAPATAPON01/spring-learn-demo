@@ -1,5 +1,7 @@
 package spring.learn.chapter;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
 import org.springframework.stereotype.Service;
 
 /**
@@ -9,6 +11,7 @@ import org.springframework.stereotype.Service;
  * DESC:
  */
 @Service
+@Data
 public class BlankDisc {
 
     public String artist = "James ..";
@@ -17,5 +20,19 @@ public class BlankDisc {
         return "霉霉++";
     }
 
-    public int count=100;
+    public int count = 100;
+
+
+    private String email = "www";
+
+    private String[] songs = {"penpen", "PAPPA", "dodo"};
+
+    private songBean[] beans = {new songBean("pata"), new songBean("dodo")};
+
+    @Data
+    @AllArgsConstructor
+    class songBean {
+        private String artist;
+
+    }
 }

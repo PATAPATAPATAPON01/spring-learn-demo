@@ -1,5 +1,6 @@
 package spring.learn;
 
+import org.junit.Test;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -13,7 +14,7 @@ public class DemoApplication {
 
     public static void main(String[] args) {
 
-        System.setProperty("server.port", "0");
+        System.setProperty("server.port", "10040");
         System.setProperty("disc.title", "this is my title");
 
         ApplicationContext context = SpringApplication.run(DemoApplication.class, args);
@@ -34,4 +35,6 @@ public class DemoApplication {
         TestBean testBean = context.getBean(TestBean.class);
         System.out.println(testBean);
     }
+
+
 }

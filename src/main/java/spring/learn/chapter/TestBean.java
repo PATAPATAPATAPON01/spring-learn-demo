@@ -59,7 +59,22 @@ public class TestBean {
     private String winnerOrLoser;
 
 
-    @Value("#{blankDisc.selectList()?:'isNull'}")
+    @Value("#{blankDisc.selectList()?:'defaultValue'}")
     private String nullOrNot;
+
+
+    @Value("#{blankDisc.email matches '[a-zA-Z0-9]'}")
+    private boolean testIsEmail;
+
+    @Value("#{blankDisc.songs[T(Math).random()*blankDisc.songs.length]}")
+    private String singleSong;
+
+
+    @Value("#{blankDisc.beans.?[artist eq 'pata' or artist eq 'dodo']}")
+    private BlankDisc.songBean [] subSongs;
+
+
+    @Value("#{blankDisc.beans.![artist]}")
+    private String[] singleArtist;
 
 }
