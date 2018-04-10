@@ -32,11 +32,6 @@ public class BlankDisc {
     @Data
     @AllArgsConstructor
     class songBean {
-
-
-
-
-
         private String artist;
 
     }
