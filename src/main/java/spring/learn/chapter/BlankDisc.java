@@ -34,5 +34,9 @@ public class BlankDisc {
     class songBean {
         private String artist;
 
+        public void method1() {
+            System.out.println("1===");
+        }
+
     }
 }
