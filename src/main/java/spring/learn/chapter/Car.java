@@ -24,6 +24,17 @@ public class Car {
     private int seatCount;
 
     public Car(String manufacturer, String licencePlate, int seatCount) {
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
+        System.out.println();
         this.manufacturer = manufacturer;
         this.licensePlate = licencePlate;
         this.seatCount = seatCount;
