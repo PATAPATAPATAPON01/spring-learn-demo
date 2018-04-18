@@ -86,7 +86,7 @@ public class SimpleTest {
 
         System.out.println(spy.get(0));
         System.out.println(spy.size());
-
+        System.out.println();
         verify(spy).add("one");
         verify(spy).add("two");
     }
