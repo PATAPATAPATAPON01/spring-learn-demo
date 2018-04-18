@@ -141,6 +141,7 @@ public class MainTest {
         sourceBean.setData("-data");
         sourceBean.setId(100l);
         sourceBean.setName("-name");
+        System.out.println("2222222");
         System.out.println("222222");
         TargetBean targetBean = new TargetBean();
         copier.copy(sourceBean, targetBean, new Converter() {
